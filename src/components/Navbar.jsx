@@ -29,7 +29,7 @@ const Navbar = () => {
           <li>Projects</li>
         </a>
 
-        <a href="https://drive.google.com/file/d/1B5TNxANGbLjyrEG6xzW-KqWl4RkgJjia/view?usp=sharing" target="_blank" className="cursor-pointer opacity-70 transition-all duration-300 hover:opacity-100">
+        <a href="https://drive.google.com/file/d/1zMx7ud0Ln3VY4dMYVC-0YIE1tUazJM0B/view?usp=sharing" target="_blank" className="cursor-pointer opacity-70 transition-all duration-300 hover:opacity-100">
           <li>Resume</li>
         </a>
       </ul>
