@@ -31,6 +31,12 @@ const Timeline = () => {
       subtitle: 'Courant Institute of Mathematical Sciences, New York University',
       description: 'GPA: 3.76/4.0',
     },
+        {
+      year: 'January 2024 - June 2024',
+      title: 'Research Assistant',
+      subtitle: 'New York University',
+      description: 'Collaborated on developing a deep‐learning pipeline for unsupervised video representation learning, leveraging PyTorch to build and train a 3D convolutional autoencoder on a custom video dataset.',
+    },
     {
       year: 'August 2022 – August 2023',
       title: 'Software Development Engineer',
@@ -38,14 +44,14 @@ const Timeline = () => {
       description: 'Developed an email verification service and campaign system handling 10,000+ emails daily with 49% accuracy. Revamped the front-end and payment systems, leading to 12% increase in user retention and 27% increase in subscriptions.',
     },
     {
-      year: 'April 2022 – August 2022',
-      title: 'Research Assistant',
+      year: 'June 2022 – August 2022',
+      title: 'Software Engineer',
       subtitle: 'Jawaharlal Nehru University, New Delhi',
       description: 'Designed and implemented a novel deep learning technique using PyTorch for enhanced object detection from text and image inputs. Achieved 1.2% accuracy improvement on unseen objects, setting a new benchmark in the field.',
     },
     {
-      year: 'August 2021 – March 2022',
-      title: 'Research Assistant',
+      year: 'April 2020 – May 2022',
+      title: 'Software Engineer - Research',
       subtitle: 'International Institute of Information Technology, Hyderabad',
       description: 'Implemented advanced masking techniques on the NTU-60 dataset to enable cross-dataset action recognition. Successfully achieved unified model performance with only 0.2% performance impact across different skeleton structures.',
     },
@@ -54,12 +60,6 @@ const Timeline = () => {
       title: 'Bachelor of Technology in Computer Science and Engineering',
       subtitle: 'Guru Gobind Singh Indraprastha University, New Delhi',
       description: 'GPA: 9.05/10',
-    },
-    {
-      year: 'April 2020 – July 2021',
-      title: 'Research Intern',
-      subtitle: 'IIIT Hyderabad',
-      description: 'Led research in Zero-Shot Learning (ZSL) and Generalized Zero Shot Learning (GZSL) for skeleton action recognition. Set new benchmarks with 4.34% increase in ZSL accuracy and 2.93% improvement in GZSL accuracy.',
     },
     {
       year: 'May 2019 - October 2019',
