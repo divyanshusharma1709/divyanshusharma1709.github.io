@@ -1,16 +1,19 @@
 const Contact = () => {
   return (
-    <div id="contact" className="flex min-h-[70vh] min-w-full items-center justify-center">
-      <div className="flex flex-col items-center justify-center gap-3 space-y-6 p-14">
-        <h1 className="text-center text-5xl md:text-7xl">
-          <span className="bg-gradient-to-r from-indigo-500 to-blue-500 bg-clip-text text-transparent">
-            Get in Touch
+    <div id="contact" className="flex min-h-[70vh] min-w-full items-center justify-center px-6 pb-16 pt-10">
+      <div className="flex flex-col items-center justify-center gap-3 space-y-6 rounded-3xl border border-slate-800 bg-slate-950/80 p-10 shadow-xl shadow-slate-950/60 md:p-14">
+        <h1 className="text-center text-4xl md:text-5xl">
+          <span className="text-slate-100">
+            Get in touch
           </span>
         </h1>
-        <p className="text-center text-lg font-semibold text-gray-500">
-          Want to chat? Send me an e-mail
+        <p className="text-center text-base font-medium text-slate-300">
+          Open to software and ML engineering roles, research collaborations, and interesting side projects.
         </p>
-        <a href="mailto:sharmadivyanshu1709@gmail.com" className="text-nowrap rounded-lg border border-indigo-600 bg-black px-5 py-3 text-lg font-bold text-white shadow-lg shadow-indigo-700 trainsition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-indigo-600">
+        <a
+          href="mailto:divyanshusharma@nyu.edu"
+          className="text-nowrap rounded-full border border-violet-500/60 bg-violet-700 px-6 py-3 text-sm font-semibold text-slate-50 shadow-sm shadow-slate-900/60 transition-all duration-150 hover:-translate-y-1 hover:bg-violet-600"
+        >
           Contact Me
         </a>
       </div>

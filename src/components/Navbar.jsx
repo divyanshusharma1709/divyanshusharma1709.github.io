@@ -13,69 +13,100 @@ const Navbar = () => {
 
 
   return (
-    <nav className="fixed top-0 z-50 flex w-full items-center justify-between border-b border-b-gray-700 bg-black/70 px-py-6 text-white backdrop-blur-md md:justify-evenly">
-      <a href="#home" className="bg-gradient-to-r from-blue-500 to-pink-500 bg-clip-text text-transparent opacity-80 text-3xl font-semibold transition-all duration-300 hover:opacity-100">Divyanshu</a>
+    <nav className="fixed top-0 z-50 flex w-full items-center justify-between border-b border-slate-800 bg-slate-950/90 px-6 py-4 text-slate-100 backdrop-blur-md md:justify-evenly">
+      <a
+        href="#home"
+        className="text-2xl font-semibold tracking-tight text-slate-100 opacity-90 transition-all duration-300 hover:opacity-100 md:text-3xl"
+      >
+        Divyanshu
+      </a>
 
-      <ul className="hidden md:flex gap-10">
-        <a href="#home" className="cursor-pointer opacity-70 transition-all duration-300 hover:opacity-100">
+      <ul className="hidden items-center gap-10 text-sm font-medium md:flex">
+        <a href="#home" className="cursor-pointer text-slate-300 transition-all duration-150 hover:text-slate-50">
           <li>Home</li>
         </a>
 
-        <a href="#tech" className="cursor-pointer opacity-70 transition-all duration-300 hover:opacity-100">
-          <li>Tech</li>
+        <a href="#experience" className="cursor-pointer text-slate-300 transition-all duration-150 hover:text-slate-50">
+          <li>Experience</li>
         </a>
 
-        <a href="#projects" className="cursor-pointer opacity-70 transition-all duration-300 hover:opacity-100">
+        <a href="#projects" className="cursor-pointer text-slate-300 transition-all duration-150 hover:text-slate-50">
           <li>Projects</li>
         </a>
 
-        <a href="https://drive.google.com/file/d/1zMx7ud0Ln3VY4dMYVC-0YIE1tUazJM0B/view?usp=sharing" target="_blank" className="cursor-pointer opacity-70 transition-all duration-300 hover:opacity-100">
+        <a href="#honors" className="cursor-pointer text-slate-300 transition-all duration-150 hover:text-slate-50">
+          <li>Honors</li>
+        </a>
+
+        <a href="#publications" className="cursor-pointer text-slate-300 transition-all duration-150 hover:text-slate-50">
+          <li>Publications</li>
+        </a>
+
+        <a
+          href="https://drive.google.com/file/d/1MaANa767w67cHbzdi8MddebwONs7PgWV/view?usp=sharing"
+          target="_blank"
+          className="cursor-pointer rounded-full border border-slate-700 bg-slate-900 px-4 py-1.5 text-slate-100 shadow-sm transition-all duration-150 hover:border-indigo-400 hover:bg-slate-800 hover:text-white"
+        >
           <li>Resume</li>
         </a>
       </ul>
 
-      <ul className="hidden md:flex gap-5">
-        <li className="cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-yellow-500 hover:opacity-100"><a href="mailto:divyanshu.sharma@nyu.edu"><BsEnvelopeAt/></a></li>
+      <ul className="hidden items-center gap-5 md:flex">
+        <li className="cursor-pointer text-xl text-slate-400 transition-all duration-150 hover:text-indigo-300">
+          <a href="mailto:divyanshu.sharma@nyu.edu"><BsEnvelopeAt/></a>
+        </li>
 
-        <li className="cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-blue-500 hover:opacity-100"><a href="https://www.linkedin.com/in/divyanshusharma17/" target="_blank" ><BsLinkedin/></a></li>
+        <li className="cursor-pointer text-xl text-slate-400 transition-all duration-150 hover:text-indigo-300">
+          <a href="https://www.linkedin.com/in/divyanshusharma17/" target="_blank" ><BsLinkedin/></a>
+        </li>
 
-        <li className="cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-orange-500 hover:opacity-100"><a href="https://github.com/divyanshusharma1709" target="_blank" ><BsGithub/></a></li>
+        <li className="cursor-pointer text-xl text-slate-400 transition-all duration-150 hover:text-indigo-300">
+          <a href="https://github.com/divyanshusharma1709" target="_blank" ><BsGithub/></a>
+        </li>
           
       </ul>
       {isOpen ? (
-        <BiX className="block md:hidden text-4xl" onClick={menuOpen}/>
+        <BiX className="block text-3xl md:hidden" onClick={menuOpen}/>
       ): (
-        <BiMenu className="block md:hidden text-4xl" onClick={menuOpen}/>
+        <BiMenu className="block text-3xl md:hidden" onClick={menuOpen}/>
       )}
 
       {isOpen && (
-        <div className={`fixed right-0 top-[84px] flex h-screen w-1/2 flex-col items-start justify-start gap-10 border-l border-gray-800 bg-black/90 p-12 ${isOpen ? "block" : "hidden"}`}>
+        <div className={`fixed right-0 top-[72px] flex h-screen w-3/4 flex-col items-start justify-start gap-10 border-l border-slate-800 bg-slate-950/95 p-10 ${isOpen ? "block" : "hidden"}`}>
 
-          <ul className="flex flex-col gap-8">
-              <a href="#home" className="cursor-pointer opacity-70 transition-all duration-300 hover:opacity-100">
+          <ul className="flex flex-col gap-8 text-lg">
+              <a href="#home" className="cursor-pointer text-slate-300 transition-all duration-150 hover:text-slate-50" onClick={menuOpen}>
               <li>Home</li>
             </a>
 
-            <a href="#tech" className="cursor-pointer opacity-70 transition-all duration-300 hover:opacity-100">
-              <li>Tech</li>
+            <a href="#experience" className="cursor-pointer text-slate-300 transition-all duration-150 hover:text-slate-50" onClick={menuOpen}>
+              <li>Experience</li>
             </a>
 
-            <a href="#projects" className="cursor-pointer opacity-70 transition-all duration-300 hover:opacity-100">
+            <a href="#projects" className="cursor-pointer text-slate-300 transition-all duration-150 hover:text-slate-50" onClick={menuOpen}>
               <li>Projects</li>
             </a>
 
-            <a href="#contact" className="cursor-pointer opacity-70 transition-all duration-300 hover:opacity-100">
+            <a href="#honors" className="cursor-pointer text-slate-300 transition-all duration-150 hover:text-slate-50" onClick={menuOpen}>
+              <li>Honors</li>
+            </a>
+
+            <a href="#publications" className="cursor-pointer text-slate-300 transition-all duration-150 hover:text-slate-50" onClick={menuOpen}>
+              <li>Publications</li>
+            </a>
+
+            <a href="#contact" className="cursor-pointer text-slate-300 transition-all duration-150 hover:text-slate-50" onClick={menuOpen}>
               <li>Contact</li>
             </a>
           </ul>
-          <ul className="flex flex-wrap gap-5">
-            <li className="cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-yellow-500 hover:opacity-100"><BsEnvelopeAt/></li>
+          <ul className="mt-4 flex flex-wrap gap-5 text-2xl text-slate-400">
+            <li className="cursor-pointer transition-all duration-150 hover:text-indigo-300"><BsEnvelopeAt/></li>
 
-            <li className="cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-blue-500 hover:opacity-100"><BsLinkedin/></li>
+            <li className="cursor-pointer transition-all duration-150 hover:text-indigo-300"><BsLinkedin/></li>
 
-            <li className="cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-orange-500 hover:opacity-100"><BsGithub/></li>
+            <li className="cursor-pointer transition-all duration-150 hover:text-indigo-300"><BsGithub/></li>
 
-            <li className="cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-sky-500 hover:opacity-100"><BsTwitterX/></li>
+            <li className="cursor-pointer transition-all duration-150 hover:text-indigo-300"><BsTwitterX/></li>
           </ul>
         </div>
       )}
