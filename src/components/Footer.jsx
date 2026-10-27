@@ -12,7 +12,7 @@ const externalLinks = [
   { label: "LinkedIn", href: "https://www.linkedin.com/in/divyanshusharma17/" },
   {
     label: "Resume",
-    href: "https://drive.google.com/file/d/1MaANa767w67cHbzdi8MddebwONs7PgWV/view?usp=sharing",
+    href: "https://drive.google.com/file/d/1_Tozd4c6lzNwI5PjJd51GlQ1Vob32aOD/view?usp=sharing",
   },
 ];
 
